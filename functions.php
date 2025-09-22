@@ -22,3 +22,97 @@ function get_practice_phone() {
 function get_practice_phone_link() {
   return 'tel:+1-818-324-3800';
 }
+
+// Reading Time Function
+function reading_time() {
+  $content = get_post_field('post_content', get_the_ID());
+  $word_count = str_word_count(strip_tags($content));
+  $reading_time = ceil($word_count / 200); // Average reading speed: 200 words per minute
+  
+  return $reading_time;
+}
+
+// Custom Excerpt Length
+function custom_excerpt_length($length) {
+  return 30;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+// Custom Excerpt More
+function custom_excerpt_more($more) {
+  return '...';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
+
+// Add Custom Image Sizes
+function add_custom_image_sizes() {
+  add_image_size('blog-featured', 800, 400, true);
+  add_image_size('blog-thumbnail', 400, 300, true);
+}
+add_action('after_setup_theme', 'add_custom_image_sizes');
+
+// Enqueue Custom Styles for Single Posts
+function enqueue_single_post_styles() {
+  if (is_single()) {
+    wp_add_inline_style('ourmaincss', '
+      .prose {
+        color: #374151;
+        line-height: 1.75;
+      }
+      .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+        color: #111827;
+        font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .prose h1 { font-size: 2.25rem; }
+      .prose h2 { font-size: 1.875rem; }
+      .prose h3 { font-size: 1.5rem; }
+      .prose h4 { font-size: 1.25rem; }
+      .prose p { margin-bottom: 1.25rem; }
+      .prose a {
+        color: #2563eb;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+      .prose a:hover {
+        color: #1d4ed8;
+      }
+      .prose blockquote {
+        border-left: 4px solid #2563eb;
+        padding-left: 1rem;
+        font-style: italic;
+        color: #6b7280;
+        margin: 1.5rem 0;
+      }
+      .prose ul, .prose ol {
+        margin: 1.25rem 0;
+        padding-left: 1.5rem;
+      }
+      .prose li {
+        margin: 0.5rem 0;
+      }
+      .prose img {
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        margin: 2rem 0;
+      }
+      .prose code {
+        background-color: #f3f4f6;
+        padding: 0.125rem 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+      }
+      .prose pre {
+        background-color: #1f2937;
+        color: #f9fafb;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+      }
+    ');
+  }
+}
+add_action('wp_enqueue_scripts', 'enqueue_single_post_styles');

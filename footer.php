@@ -5,11 +5,9 @@
             <!-- Left: Logo + Tagline -->
             <div>
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                        </svg>
-                    </div>
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2019/10/Reflect-logo.png" 
+                         alt="Reflect Neuropsychology Logo" 
+                         class="h-10 w-auto">
                     <div>
                         <h3 class="text-lg font-serif">Reflect Neuropsychology</h3>
                         <p class="text-sm text-gray-400">Dr. Judith L. Friedman</p>
@@ -18,6 +16,13 @@
                 <p class="text-gray-400 mb-4">
                     Professional psychological assessments with compassionate, evidence-based care in Calabasas and Los Angeles.
                 </p>
+                
+                <!-- Professional Badge -->
+                <div class="mt-4">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2022/07/download.svg" 
+                         alt="Professional Certification Badge" 
+                         class="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300">
+                </div>
             </div>
             
             <!-- Center: Quick Links -->
@@ -33,7 +38,7 @@
                 </ul>
             </div>
             
-            <!-- Right: Contact Info + Phone CTA -->
+            <!-- Right: Contact Info -->
             <div>
                 <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
                 <div class="space-y-3 mb-6">
@@ -49,25 +54,40 @@
                         </svg>
                         <span class="text-gray-400">info@reflectneuropsychology.com</span>
                     </div>
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span class="text-gray-400">(818) 324-3800</span>
+                    </div>
                 </div>
                 
-                <a href="<?php echo get_practice_phone_link(); ?>" class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors w-fit">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                    </svg>
-                    <span class="font-semibold"><?php echo get_practice_phone(); ?></span>
-                </a>
+                <!-- Medicare Accepted Badge -->
+                <div class="mt-4">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2019/08/Picture2.png" 
+                         alt="Medicare Accepted" 
+                         class="h-14 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300">
+                </div>
             </div>
         </div>
         
-        <!-- Bottom: Copyright + Privacy Policy -->
+        <!-- Bottom: Copyright + Credits + Links -->
         <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-400 text-sm">
-                © <?php echo date('Y'); ?> Reflect Neuropsychology. All rights reserved.
-            </p>
+            <div class="text-gray-400 text-sm">
+                <p>© <?php echo date('Y'); ?> <strong>Reflect Neuropsychology</strong></p>
+                <p class="mt-1">[ CA License: PSY25712 ]</p>
+            </div>
+            
+            <div class="text-center text-gray-400 text-sm mt-4 md:mt-0">
+                <p>Crafted By</p>
+                <a href="https://localvocalmarketing.com/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors">
+                    Local Vocal Marketing
+                </a>
+            </div>
+            
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors uppercase tracking-wide">Privacy</a>
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors uppercase tracking-wide">Cookies</a>
             </div>
         </div>
     </div>
