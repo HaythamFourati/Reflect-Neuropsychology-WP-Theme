@@ -27,7 +27,7 @@
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex items-center space-x-8">
             <a href="<?php echo home_url(); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
-            <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
+            <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
             <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About Dr. Friedman</a>
             <a href="#assessments" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Assessments</a>
             <a href="#resources" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Resources</a>
@@ -56,7 +56,7 @@
         <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-4">
           <div class="flex flex-col space-y-4">
             <a href="<?php echo home_url(); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
-            <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
+            <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
             <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About Dr. Friedman</a>
             <a href="#assessments" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Assessments</a>
             <a href="#resources" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Resources</a>

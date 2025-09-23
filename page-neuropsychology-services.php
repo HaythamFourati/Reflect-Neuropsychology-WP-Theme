@@ -18,27 +18,49 @@ get_header(); ?>
         <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-blue-50 rounded-full opacity-30"></div>
     </div>
     
-    <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-2 relative z-10">
-        <!-- Breadcrumb Navigation -->
-        <nav class="mb-8">
-            <ol class="flex items-center space-x-2 text-sm text-gray-600">
-                <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-600 transition-colors">Home</a></li>
-                <li><span class="mx-2">/</span></li>
-                <li class="text-gray-900 font-medium">Our Services</li>
-            </ol>
-        </nav>
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-2 relative z-10">
         
-        <!-- Page Title -->
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6">Comprehensive Neuropsychological Services</h1>
         
-        <!-- Page Description -->
-        <div class="text-xl text-gray-600 leading-relaxed">
-            <p>Expert psychological assessments and evaluations across the lifespan, from childhood through senior years. Our comprehensive services help identify cognitive strengths and challenges to guide treatment and support decisions.</p>
+        <!-- Two Column Layout -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Column - Text Content -->
+            <div>
+
+            <!-- Breadcrumb Navigation -->
+               <nav class="mb-8">
+                  <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                     <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-600 transition-colors">Home</a></li>
+                     <li><span class="mx-2">/</span></li>
+                     <li class="text-gray-900 font-medium">Our Services</li>
+                   </ol>
+                </nav>
+                <!-- Page Title -->
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6">Comprehensive Neuropsychological Services</h1>
+                
+                <!-- Page Description -->
+                <div class="text-xl text-gray-600 leading-relaxed">
+                    <p>Expert psychological assessments and evaluations across the lifespan, from childhood through senior years. Our comprehensive services help identify cognitive strengths and challenges to guide treatment and support decisions.</p>
+                </div>
+            </div>
+            
+            <!-- Right Column - Image -->
+            <div class="relative">
+                <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2024/01/AdobeStock_334168757.jpg" 
+                         alt="Neuropsychological Assessment Session" 
+                         class="w-full h-96 object-cover">
+                    <!-- Overlay for better text contrast if needed -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+                <!-- Decorative element -->
+                <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-100 rounded-full opacity-60 -z-10"></div>
+                <div class="absolute -top-6 -left-6 w-16 h-16 bg-blue-50 rounded-full opacity-80 -z-10"></div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Main Content -->
+<!-- Main Content 
 <article class="py-12 bg-white">
     <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-2">
         <div class="prose prose-lg prose-blue max-w-none">
@@ -46,7 +68,7 @@ get_header(); ?>
         </div>
     </div>
 </article>
-
+-->
 <!-- Detailed Services Section -->
 <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -275,8 +297,147 @@ get_header(); ?>
     </div>
 </section>
 
+<!-- Experience Excellence Section -->
+<section class="py-20 bg-gradient-to-br from-blue-50 via-white to-gray-50 relative overflow-hidden">
+    <!-- Background Decorative Elements -->
+    <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-30"></div>
+        <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-green-100 rounded-full opacity-25"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-900 mb-4">Why Choose Reflect Neuropsychology</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Under the expert guidance of Dr. Judith Friedman, we provide evidence-based neuropsychological assessments for children, adolescents, adults, and older adults across the San Fernando Valley, Simi Valley, and Ventura County
+            </p>
+        </div>
+        
+        <!-- Image Grid with Content -->
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+            <!-- Professional Environment -->
+            <div class="group relative">
+                <div class="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2022/04/AdobeStock_128751432-1.jpg" 
+                         alt="Modern, comfortable assessment environment" 
+                         class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="text-xl font-serif text-white mb-2">Welcoming Environment</h3>
+                        <p class="text-gray-200 text-sm">Our Calabasas office provides a comfortable, professional setting designed to put you and your family at ease</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Expert Team -->
+            <div class="group relative">
+                <div class="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2019/09/cropped-1.jpg" 
+                         alt="Licensed neuropsychologist conducting assessment" 
+                         class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="text-xl font-serif text-white mb-2">Dr. Judith Friedman</h3>
+                        <p class="text-gray-200 text-sm">Leading forensic neuropsychology expert with over 20+ years of specialized experience in Southern California</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Advanced Technology -->
+            <div class="group relative">
+                <div class="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2019/08/counseling12345-scaled.jpeg" 
+                         alt="Advanced neuropsychological testing technology" 
+                         class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="text-xl font-serif text-white mb-2">Evidence-Based Testing</h3>
+                        <p class="text-gray-200 text-sm">Comprehensive assessments using scientifically validated tools for conditions including ADHD, autism, brain injury, and learning disabilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Statistics Row -->
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-blue-600 mb-2">20+</div>
+                <div class="text-gray-600 font-medium">Years Experience</div>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-green-600 mb-2">5.0</div>
+                <div class="text-gray-600 font-medium">Google Rating</div>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-purple-600 mb-2">All Ages</div>
+                <div class="text-gray-600 font-medium">Lifespan Services</div>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-orange-600 mb-2">BNCE</div>
+                <div class="text-gray-600 font-medium">Brief Cognitive Exam</div>
+            </div>
+        </div>
+        
+        <!-- Bottom Feature Row -->
+        <div class="mt-16 grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left - Image -->
+            <div class="relative">
+                <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="https://www.reflectneuro.com/wp-content/uploads/2022/01/Family-of-Color-1.jpg" 
+                         alt="Personalized consultation session" 
+                         class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
+                </div>
+                <!-- Floating elements -->
+                <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-100 rounded-full opacity-60"></div>
+                <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-100 rounded-full opacity-70"></div>
+            </div>
+            
+            <!-- Right - Content -->
+            <div>
+                <h3 class="text-2xl md:text-3xl font-serif text-gray-900 mb-6">Comprehensive Assessment & Support</h3>
+                <div class="space-y-4 text-gray-600">
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <p>Individualized neuropsychological evaluations based on empirically-validated research of brain-based conditions</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                            <svg class="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <p>Detailed reports identifying cognitive strengths and challenges to guide treatment and educational planning</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                            <svg class="w-3 h-3 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <p>Therapy services available through the lifespan for continued support and intervention</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                            <svg class="w-3 h-3 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <p>Forensic and medical-legal services with expert witness testimony when needed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Template Parts -->
-<?php get_template_part('template-parts/why-choose-section'); ?>
+
 
 <?php get_template_part('template-parts/cta-section'); ?>
 
