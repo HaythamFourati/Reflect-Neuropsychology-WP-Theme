@@ -1,0 +1,124 @@
+CONTACT FORM 7 - REFLECT NEUROPSYCHOLOGY CONTACT FORM
+=====================================================
+
+FORM CODE (Copy this into Contact Form 7 plugin):
+-------------------------------------------------
+
+<div class="form-row">
+    <label> Your First Name *
+        [text* first-name placeholder "Enter your first name"]
+    </label>
+    
+    <label> Your Last Name *
+        [text* last-name placeholder "Enter your last name"]
+    </label>
+</div>
+
+<label> Your Email Address *
+    [email* your-email placeholder "Enter your email address"]
+</label>
+
+<label> Your Phone Number
+    [tel phone placeholder "Enter your phone number (optional)"]
+</label>
+
+<label> Subject
+    [select subject include_blank "Select a subject" "Schedule an Appointment" "Questions about Services" "Insurance Questions" "Referral Information" "Other"]
+</label>
+
+<label> Your Message *
+    [textarea* your-message 2x5 placeholder "Enter your message here..."]
+</label>
+
+<label class="privacy-checkbox">
+    [acceptance privacy] I agree to the privacy policy and terms of service *
+</label>
+
+[submit "Send Message"]
+
+MAIL SETTINGS:
+--------------
+
+To: info@reflectneuro.com
+From: [your-email]
+Subject: New Contact Form Submission - [subject]
+
+Message Body:
+Name: [first-name] [last-name]
+Email: [your-email]
+Phone: [phone]
+Subject: [subject]
+
+Message:
+[your-message]
+
+---
+This email was sent from the contact form on Reflect Neuropsychology website.
+
+MAIL (2) - AUTO-REPLY SETTINGS:
+-------------------------------
+
+To: [your-email]
+From: info@reflectneuro.com
+Subject: Thank you for contacting Reflect Neuropsychology
+
+Message Body:
+Dear [first-name],
+
+Thank you for contacting Reflect Neuropsychology. We have received your message and will respond within 24 hours during business hours (Monday-Friday, 9:00 AM - 5:00 PM).
+
+Your message:
+[your-message]
+
+If you need immediate assistance, please call us at (your-phone-number).
+
+Best regards,
+Dr. Judith L. Friedman
+Reflect Neuropsychology
+
+ADDITIONAL SETTINGS:
+-------------------
+
+Add this to the Additional Settings tab in Contact Form 7:
+
+on_sent_ok: "gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});"
+
+INSTRUCTIONS FOR SETUP:
+-----------------------
+
+1. Install and activate Contact Form 7 plugin
+2. Go to Contact > Contact Forms in WordPress admin
+3. Create a new form or edit existing one
+4. Copy the FORM CODE above into the Form tab
+5. Configure the Mail settings using the MAIL SETTINGS above
+6. Set up auto-reply using MAIL (2) settings
+7. Save the form and note the shortcode (e.g., [contact-form-7 id="123" title="Contact form 1"])
+8. Replace the shortcode in page-contact.php with your actual form shortcode
+9. The CSS styling is already included in the template
+
+SHORTCODE USAGE:
+---------------
+
+Replace this line in page-contact.php:
+echo do_shortcode('[contact-form-7 id="contact-form" title="Contact Form"]');
+
+With your actual shortcode:
+echo do_shortcode('[contact-form-7 id="123" title="Contact form 1"]');
+
+STYLING NOTES:
+--------------
+
+- The form uses custom CSS classes for styling
+- .form-row class creates a 2-column layout for name fields
+- All styling is responsive and matches the theme design
+- Focus states and hover effects are included
+- Success/error messages are styled to match the theme
+
+TESTING:
+--------
+
+1. Test form submission
+2. Check email delivery
+3. Verify auto-reply functionality
+4. Test responsive design on mobile devices
+5. Validate required field functionality

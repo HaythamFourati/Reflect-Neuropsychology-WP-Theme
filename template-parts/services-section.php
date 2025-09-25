@@ -21,7 +21,7 @@
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="flex flex-col md:flex-row h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
-                        <a href="#" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
+                        <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2025/06/AdobeStock_435180115.jpg" alt="Adolescent & Young Adult Assessment" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-4 left-4">
                                 <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -37,7 +37,7 @@
                             <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Adolescent & Young Adult</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Adolescent & Young Adult assessment is a comprehensive evaluation of a child's physical, cognitive, emotional, and behavioral development.</p>
                         </div>
-                        <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
+                        <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
                             Learn More 
                             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -51,7 +51,7 @@
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="flex flex-col md:flex-row-reverse h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
-                        <a href="#" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
+                        <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2023/01/AdobeStock_317868311.jpg" alt="Forensic Assessment" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-4 right-4">
                                 <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -67,7 +67,7 @@
                             <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Forensic Assessment</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Dr. Friedman is a leading forensic neuropsychology expert in Southern California. With over 20+ years of experience.</p>
                         </div>
-                        <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
+                        <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
                             Learn More 
                             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -81,7 +81,7 @@
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="flex flex-col md:flex-row h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
-                        <a href="#" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
+                        <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2019/08/seniors12345-2-scaled.jpeg" alt="Adult & Geriatric Assessment" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-4 left-4">
                                 <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -97,7 +97,7 @@
                             <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Adult & Geriatric Assessment</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Adult and Geriatric neuropsychological evaluations identify a patient's capacity for independent living, driving, and returning to school or work.</p>
                         </div>
-                        <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
+                        <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
                             Learn More 
                             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -111,7 +111,7 @@
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="flex flex-col md:flex-row-reverse h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
-                        <a href="#" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
+                        <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2019/10/Forensic-Psychology-101-with-Reflect-Neuropsychology.jpg" alt="Therapy Through the Lifespan" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-4 right-4">
                                 <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -127,7 +127,7 @@
                             <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Therapy Through the Lifespan</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">At Reflect Neuropsychology we specialize in counseling, therapy, and the neuropsychological assessment of children and adults.</p>
                         </div>
-                        <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
+                        <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
                             Learn More 
                             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -141,7 +141,7 @@
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 lg:col-span-2">
                 <div class="flex flex-col md:flex-row h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
-                        <a href="#" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
+                        <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2024/01/AdobeStock_334168757.jpg" alt="Brief Neuropsychological Cognitive Examination (BNCE)" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-4 left-4">
                                 <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -157,7 +157,7 @@
                             <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Brief Neuropsychological Cognitive Examination (BNCE)</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Under the expert guidance of Dr. Judith Friedman, we specialize in the Brief Neuropsychological Cognitive Examination (BNCE) a streamlined assessment designed to evaluate cognitive functions quickly and effectively.</p>
                         </div>
-                        <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
+                        <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 group-hover:translate-x-1">
                             Learn More 
                             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>

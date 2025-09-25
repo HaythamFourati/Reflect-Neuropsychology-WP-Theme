@@ -116,8 +116,11 @@ get_header(); ?>
                     <p class="text-gray-600"><?php echo get_the_author_meta('description'); ?></p>
                 </div>
             </div>
+
         </div>
         <?php endif; ?>
+
+
         
         <!-- Social Share -->
         <div class="mt-12 pt-8 border-t border-gray-200">

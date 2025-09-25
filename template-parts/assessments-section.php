@@ -12,22 +12,11 @@
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-serif text-gray-900 mb-4">Comprehensive Assessments Across the Lifespan</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                From childhood through senior years, we provide thorough  <br>  evaluations tailored to each life stage
+                From adolescence through senior years, we provide thorough  <br>  evaluations tailored to each life stage
             </p>
         </div>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Children -->
-            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-serif text-gray-900 mb-2">Children</h3>
-                <p class="text-gray-600 text-sm">Early identification of learning and developmental concerns</p>
-            </div>
-            
+        <div class="grid md:grid-cols-3 gap-8">
             <!-- Adolescents -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">

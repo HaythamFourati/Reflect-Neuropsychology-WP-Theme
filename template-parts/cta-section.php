@@ -15,7 +15,7 @@
         <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Ready to gain deeper insights into your cognitive and emotional well-being? Schedule your comprehensive assessment today.
         </p>
-        <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+        <a href="/contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
             Schedule Your Assessment
         </a>
     </div>

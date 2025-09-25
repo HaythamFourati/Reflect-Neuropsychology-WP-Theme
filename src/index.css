@@ -1,2 +1,105 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+
+/* CF7 Custom Styling */
+
+.cf7-form-container .wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cf7-form-container .wpcf7-form-control-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.cf7-form-container input[type="text"],
+.cf7-form-container input[type="email"],
+.cf7-form-container input[type="tel"],
+.cf7-form-container select,
+.cf7-form-container textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cf7-form-container input[type="text"]:focus,
+.cf7-form-container input[type="email"]:focus,
+.cf7-form-container input[type="tel"]:focus,
+.cf7-form-container select:focus,
+.cf7-form-container textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.cf7-form-container textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.cf7-form-container .wpcf7-submit {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cf7-form-container .wpcf7-submit:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cf7-form-container .wpcf7-response-output {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.cf7-form-container .wpcf7-mail-sent-ok {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.cf7-form-container .wpcf7-validation-errors,
+.cf7-form-container .wpcf7-mail-sent-ng {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+.cf7-form-container .wpcf7-not-valid-tip {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0 !important;
+    line-height: 1.2;
+}
+
+.cf7-form-container .wpcf7-form-control-wrap {
+    margin-bottom: 0 !important;
+}
+
+.cf7-form-container .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .cf7-form-container .form-row {
+        grid-template-columns: 1fr;
+    }
+}
