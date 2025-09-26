@@ -6,6 +6,18 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+    <!-- ADHD Telehealth Notice Banner -->
+    <div class="bg-green-50 border-b border-green-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="text-center">
+          <a href="https://adhdtestcalifornia.com/" target="_blank" rel="noopener noreferrer" class="text-green-800 hover:text-green-900 transition-colors">
+            <span class="font-medium">🏠 New Service:</span> We now provide In-Home ADHD Telehealth Testing Across California
+            <span class="ml-2 text-green-600">→ Learn More</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
     <!-- Sticky Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -18,13 +18,17 @@
                 <h1 class="text-4xl md:text-6xl font-serif text-gray-900 mb-6">Clarity for <br> a Healthier Mind</h1>
                 <p class="text-xl md:text-2xl text-gray-700/90 mb-8 max-w-2xl mx-auto lg:mx-0">Reflect Neuropsychology provides expert psychological assessments for teens and adults in Calabasas, Los Angeles, and across California with the convenience of secure Telehealth sessions.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">Book an Assessment</a>
-                    <a href="#services" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors">Learn More About Our Services</a>
+                    <a href="<?php echo site_url('/contact-us/'); ?>" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">Book an Assessment</a>
+                    <a href="<?php echo site_url('/neuropsychology-services/'); ?>" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors">Learn More About Our Services</a>
                 </div>
             </div>
             <div class="lg:col-span-6 relative">
                 <div class="relative w-full max-w-2xl mx-auto">
-                    <img src="https://www.reflectneuro.com/wp-content/uploads/2022/01/full-shot-happy-family-with-dog_1.jpg" alt="Happy family with dog in outdoor setting" class="rounded-2xl shadow-2xl ring-1 ring-black/5 w-full object-cover aspect-[4/3]">
+                    <video autoplay muted loop playsinline class="rounded-2xl shadow-2xl ring-1 ring-black/5 w-full object-cover aspect-[4/3]">
+                        <source src="https://www.reflectneuro.com/wp-content/uploads/2022/08/Family-Portrait-Generations.mp4" type="video/mp4">
+                        <!-- Fallback image in case video doesn't load -->
+                        <img src="https://www.reflectneuro.com/wp-content/uploads/2022/01/full-shot-happy-family-with-dog_1.jpg" alt="Happy family with dog in outdoor setting" class="rounded-2xl shadow-2xl ring-1 ring-black/5 w-full object-cover aspect-[4/3]">
+                    </video>
                     <img src="https://www.reflectneuro.com/wp-content/uploads/2022/04/cropped-1-2.jpg" alt="Dr. Friedman professional headshot" class="hidden sm:block absolute -left-10 -top-8 w-42 rounded-2xl shadow-xl ring-1 ring-black/5">
                 </div>
             </div>

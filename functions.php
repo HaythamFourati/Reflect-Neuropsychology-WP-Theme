@@ -12,7 +12,13 @@ function boilerplate_add_support() {
   add_theme_support('post-thumbnails');
 }
 
+// Enable excerpts for pages
+function add_excerpts_to_pages() {
+  add_post_type_support('page', 'excerpt');
+}
+
 add_action('after_setup_theme', 'boilerplate_add_support');
+add_action('init', 'add_excerpts_to_pages');
 
 // Theme Configuration Variables
 function get_practice_phone() {

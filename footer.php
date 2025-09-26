@@ -30,11 +30,11 @@
                 <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                 <ul class="space-y-2">
                     <li><a href="<?php echo home_url(); ?>" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                    <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Dr. Friedman</a></li>
-                    <li><a href="#assessments" class="text-gray-400 hover:text-white transition-colors">Assessments</a></li>
-                    <li><a href="#resources" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
-                    <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                    <li><a href="<?php echo home_url('/about-us/'); ?>" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="<?php echo home_url('/blog/'); ?>" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="<?php echo home_url('/resources/'); ?>" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
+                    <li><a href="<?php echo home_url('/contact/'); ?>" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                 </ul>
             </div>
             

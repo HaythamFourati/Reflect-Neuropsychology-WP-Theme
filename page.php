@@ -17,32 +17,62 @@ get_header(); ?>
         <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-blue-50 rounded-full opacity-30"></div>
     </div>
     
-    <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-2 relative z-10">
-        <!-- Breadcrumb Navigation -->
-        <nav class="mb-8">
-            <ol class="flex items-center space-x-2 text-sm text-gray-600">
-                <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-600 transition-colors">Home</a></li>
-                <li><span class="mx-2">/</span></li>
-                <li class="text-gray-900 font-medium"><?php the_title(); ?></li>
-            </ol>
-        </nav>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <!-- Page Title -->
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight"><?php the_title(); ?></h1>
         
-        <!-- Page Excerpt/Summary -->
-        <?php if (has_excerpt()) : ?>
-        <div class="text-xl text-gray-600 mt-6 leading-relaxed">
-            <?php the_excerpt(); ?>
+        <!-- 2-Column Layout: Text + Thumbnail -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Column - Text Content -->
+            <div>
+                <!-- Breadcrumb Navigation -->
+                <nav class="mb-8">
+                   <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                        <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-600 transition-colors">Home</a></li>
+                        <li><span class="mx-2">/</span></li>
+                        <li class="text-gray-900 font-medium"><?php the_title(); ?></li>
+                    </ol>
+                </nav>
+
+                <!-- Page Title -->
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6"><?php the_title(); ?></h1>
+                
+                <!-- Page Excerpt/Summary -->
+                <?php if (has_excerpt()) : ?>
+                <div class="text-xl text-gray-600 leading-relaxed">
+                    <?php the_excerpt(); ?>
+                </div>
+                <?php endif; ?>
+            </div>
+            
+            <!-- Right Column - Thumbnail -->
+            <div class="relative flex justify-end">
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl max-w-md mx-auto lg:mx-0">
+                        <?php the_post_thumbnail('large', array('class' => 'w-100 h-100 object-cover')); ?>
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent"></div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-100 rounded-full opacity-60 -z-10"></div>
+                    <div class="absolute -top-6 -left-6 w-16 h-16 bg-purple-50 rounded-full opacity-80 -z-10"></div>
+                <?php else : ?>
+                    <!-- Fallback decorative element if no thumbnail -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl max-w-md mx-auto lg:mx-0">
+                        <img src="https://www.reflectneuro.com/wp-content/uploads/2024/09/1527699833653.jpeg" alt="Fallback Image" class="w-100 h-100 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent"></div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-100 rounded-full opacity-60 -z-10"></div>
+                    <div class="absolute -top-6 -left-6 w-16 h-16 bg-purple-50 rounded-full opacity-80 -z-10"></div>
+                <?php endif; ?>
+            </div>
         </div>
-        <?php endif; ?>
     </div>
 </section>
 
 
 <!-- Main Content -->
 <article class="py-12 bg-white">
-    <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-2">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-2">
         <div class="prose prose-lg prose-blue max-w-none">
             <?php the_content(); ?>
             

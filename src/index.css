@@ -3,6 +3,9 @@
 
 
 /* CF7 Custom Styling */
+html {
+    scroll-behavior: smooth;
+}
 
 .cf7-form-container .wpcf7-form {
     display: flex;
