@@ -10,20 +10,20 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
 <!-- Hero Section with Featured Image -->
-<section class="relative py-16 lg:py-24 bg-gradient-to-br from-blue-50 via-white to-gray-50 overflow-hidden">
+<section class="relative py-16 lg:py-24 bg-gradient-to-br from-primary-50 via-white to-gray-50 overflow-hidden">
     <!-- Decorative Background Elements -->
     <div class="absolute inset-0 overflow-hidden">
-        <div class="absolute -top-32 -right-32 w-64 h-64 bg-blue-100 rounded-full opacity-20"></div>
-        <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-blue-50 rounded-full opacity-30"></div>
+        <div class="absolute -top-32 -right-32 w-64 h-64 bg-primary-100 rounded-full opacity-20"></div>
+        <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-primary-50 rounded-full opacity-30"></div>
     </div>
     
     <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-2 relative z-10">
         <!-- Breadcrumb Navigation -->
         <nav class="mb-8">
             <ol class="flex items-center space-x-2 text-sm text-gray-600">
-                <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-600 transition-colors">Home</a></li>
+                <li><a href="<?php echo home_url(); ?>" class="hover:text-primary-600 transition-colors">Home</a></li>
                 <li><span class="mx-2">/</span></li>
-                <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:text-blue-600 transition-colors">Blog</a></li>
+                <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:text-primary-600 transition-colors">Blog</a></li>
                 <li><span class="mx-2">/</span></li>
                 <li class="text-gray-900 font-medium"><?php the_title(); ?></li>
             </ol>
@@ -59,21 +59,18 @@ get_header(); ?>
             <div class="flex items-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
                 <?php echo reading_time(); ?> min read
             </div>
         </div>
         
         <!-- Post Title -->
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight"><?php the_title(); ?></h1>
-        
-        
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6"><?php the_title(); ?></h1>
     </div>
 </section>
 
 <!-- Featured Image -->
 <?php if (has_post_thumbnail()) : ?>
-<section class="py-2 bg-white">
+<section class="-mt-16 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-2">
         <div class="relative rounded-2xl overflow-hidden shadow-2xl">
             <?php the_post_thumbnail('large', array('class' => 'w-full h-auto object-cover')); ?>
@@ -96,7 +93,7 @@ get_header(); ?>
             <div class="flex flex-wrap gap-2">
                 <?php foreach (get_the_tags() as $tag) : ?>
                 <a href="<?php echo get_tag_link($tag->term_id); ?>" 
-                   class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full hover:bg-blue-200 transition-colors">
+                   class="inline-block px-3 py-1 bg-primary-100 text-primary-800 text-sm font-medium rounded-full hover:bg-primary-200 transition-colors">
                     <?php echo $tag->name; ?>
                 </a>
                 <?php endforeach; ?>
@@ -128,7 +125,7 @@ get_header(); ?>
             <div class="flex space-x-4">
                 <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>&text=<?php echo urlencode(get_the_title()); ?>" 
                    target="_blank" rel="noopener noreferrer"
-                   class="flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                   class="flex items-center px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                     </svg>
@@ -137,7 +134,7 @@ get_header(); ?>
                 
                 <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" 
                    target="_blank" rel="noopener noreferrer"
-                   class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                   class="flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
@@ -185,14 +182,14 @@ if ($related_posts) : ?>
                 <div class="p-6">
                     <div class="text-sm text-gray-600 mb-2"><?php echo get_the_date('F j, Y'); ?></div>
                     <h3 class="text-lg font-serif text-gray-900 mb-3">
-                        <a href="<?php the_permalink(); ?>" class="hover:text-blue-600 transition-colors">
+                        <a href="<?php the_permalink(); ?>" class="hover:text-primary-600 transition-colors">
                             <?php the_title(); ?>
                         </a>
                     </h3>
                     <p class="text-gray-600 mb-4">
                         <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
                     </p>
-                    <a href="<?php the_permalink(); ?>" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    <a href="<?php the_permalink(); ?>" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
                         Read More →
                     </a>
                 </div>

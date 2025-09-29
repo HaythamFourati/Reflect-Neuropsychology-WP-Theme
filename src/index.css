@@ -1,6 +1,123 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Global Color Variables */
+:root {
+  /* Primary Brand Colors */
+  --color-primary: #003153;
+  --color-primary-light: #004a7a;
+  --color-primary-dark: #001f35;
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0efff;
+  --color-primary-200: #b8dcff;
+  --color-primary-300: #7cc2ff;
+  --color-primary-400: #36a5ff;
+  --color-primary-500: #003153;
+  --color-primary-600: #004a7a;
+  --color-primary-700: #001f35;
+  --color-primary-800: #001529;
+  --color-primary-900: #000a14;
+  
+  /* Secondary Colors */
+  --color-secondary: #10b981;
+  --color-secondary-light: #34d399;
+  --color-secondary-dark: #059669;
+  
+  /* Neutral Colors */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-success-light: #d1fae5;
+  --color-success-dark: #065f46;
+  --color-error: #ef4444;
+  --color-error-light: #fee2e2;
+  --color-error-dark: #991b1b;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+  --color-warning-dark: #92400e;
+}
+
+/* Custom Color Classes to Replace Tailwind Blue */
+.bg-primary-100 {
+  background-color: var(--color-primary-100);
+}
+
+.bg-primary-600 {
+  background-color: var(--color-primary);
+}
+
+.text-primary-600 {
+  color: var(--color-primary);
+}
+
+.text-primary-700 {
+  color: var(--color-primary-light);
+}
+
+.hover\:text-primary-600:hover {
+  color: var(--color-primary);
+}
+
+.hover\:text-primary-700:hover {
+  color: var(--color-primary-light);
+}
+
+.hover\:bg-primary-50:hover {
+  background-color: var(--color-primary-50);
+}
+
+.hover\:bg-primary-700:hover {
+  background-color: var(--color-primary-light);
+}
+
+.border-primary-600 {
+  border-color: var(--color-primary);
+}
+
+.focus\:ring-primary-500:focus {
+  --tw-ring-color: var(--color-primary);
+}
+
+.focus\:border-primary-500:focus {
+  border-color: var(--color-primary);
+}
+
+/* Gradient Classes */
+.bg-gradient-primary {
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+}
+
+.hover\:bg-gradient-primary-dark:hover {
+  background: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.from-primary-600 {
+  --tw-gradient-from: var(--color-primary);
+  --tw-gradient-to: rgba(0, 49, 83, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-primary-700 {
+  --tw-gradient-to: var(--color-primary-light);
+}
+
+.hover\:from-primary-700:hover {
+  --tw-gradient-from: var(--color-primary-light);
+}
+
+.hover\:to-primary-800:hover {
+  --tw-gradient-to: var(--color-primary-dark);
+}
 
 /* CF7 Custom Styling */
 html {
@@ -25,7 +142,7 @@ html {
 .cf7-form-container textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--color-gray-300);
     border-radius: 0.5rem;
     font-size: 1rem;
     transition: border-color 0.2s, box-shadow 0.2s;
@@ -37,8 +154,8 @@ html {
 .cf7-form-container select:focus,
 .cf7-form-container textarea:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 49, 83, 0.1);
 }
 
 .cf7-form-container textarea {
@@ -48,7 +165,7 @@ html {
 
 .cf7-form-container .wpcf7-submit {
     width: 100%;
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     color: white;
     font-weight: 600;
     padding: 1rem 1.5rem;
@@ -60,7 +177,7 @@ html {
 }
 
 .cf7-form-container .wpcf7-submit:hover {
-    background-color: #1d4ed8;
+    background-color: var(--color-primary-light);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -71,20 +188,20 @@ html {
 }
 
 .cf7-form-container .wpcf7-mail-sent-ok {
-    background-color: #d1fae5;
-    color: #065f46;
-    border: 1px solid #a7f3d0;
+    background-color: var(--color-success-light);
+    color: var(--color-success-dark);
+    border: 1px solid var(--color-secondary-light);
 }
 
 .cf7-form-container .wpcf7-validation-errors,
 .cf7-form-container .wpcf7-mail-sent-ng {
-    background-color: #fee2e2;
-    color: #991b1b;
-    border: 1px solid #fca5a5;
+    background-color: var(--color-error-light);
+    color: var(--color-error-dark);
+    border: 1px solid var(--color-error);
 }
 
 .cf7-form-container .wpcf7-not-valid-tip {
-    color: #dc2626;
+    color: var(--color-error);
     font-size: 0.875rem;
     margin-top: 0.25rem;
     margin-bottom: 0 !important;

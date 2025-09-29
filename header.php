@@ -7,15 +7,42 @@
   </head>
   <body <?php body_class(); ?>>
     <!-- ADHD Telehealth Notice Banner -->
-    <div class="bg-green-50 border-b border-green-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <div class="relative bg-gradient-to-r from-green-50 via-emerald-50 to-green-50 overflow-hidden">
+      <!-- Animated background elements -->
+      <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-green-200 rounded-full animate-pulse" style="animation-delay: 0s;"></div>
+        <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-200 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-0 left-1/4 w-20 h-20 bg-green-300 rounded-full animate-pulse" style="animation-delay: 2s;"></div>
+      </div>
+      
+      <div class="relative max-w-6xl mx-auto">
         <div class="text-center">
-          <a href="https://adhdtestcalifornia.com/" target="_blank" rel="noopener noreferrer" class="text-green-800 hover:text-green-900 transition-colors">
-            <span class="font-medium">🏠 New Service:</span> We now provide In-Home ADHD Telehealth Testing Across California
-            <span class="ml-2 text-green-600">→ Learn More</span>
+          <a href="https://adhdtestcalifornia.com/" target="_blank" rel="noopener noreferrer" class="group w-full flex items-center gap-10 justify-center backdrop-blur-sm px-6 py-3 transform hover:scale-105 transition-all duration-300 ">
+            <!-- Content with animated notification -->
+            <div class="flex items-center space-x-3">
+              <div class="relative">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold bg-primary-100 text-primary-800 animate-pulse">
+                  NEW
+                </span>
+                <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
+              </div>
+              <span class="font-bold text-primary-700 text-sm sm:text-base">ADHD Telehealth Testing</span>
+              <span class="text-xs sm:text-sm text-primary-600 hidden sm:inline">
+                Now available across California • In-Home Service
+              </span>
+            </div>
+            
+            <!-- Animated arrow -->
+            <div class="flex items-center space-x-1 text-primary-600 group-hover:text-primary-700">
+              <span class="text-sm font-semibold hidden sm:inline">Learn More</span>
+              <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </div>
           </a>
         </div>
       </div>
+      
     </div>
     
     <!-- Sticky Header -->
@@ -38,11 +65,11 @@
           
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex items-center space-x-8">
-            <a href="<?php echo home_url(); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
+            <a href="<?php echo home_url(); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Home</a>
             
             <!-- Services Dropdown -->
             <div class="relative group">
-              <button class="text-gray-700 hover:text-blue-600 transition-colors font-medium flex items-center space-x-1">
+              <button class="text-gray-700 hover:text-primary-600 transition-colors font-medium flex items-center space-x-1">
                 <span>Services</span>
                 <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -52,27 +79,27 @@
               <!-- Dropdown Menu -->
               <div class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div class="py-2">
-                  <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-100">
+                  <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 border-b border-gray-100">
                     <div class="font-medium">All Services</div>
                     <div class="text-xs text-gray-500">Complete overview of our services</div>
                   </a>
-                  <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-100">
+                  <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 border-b border-gray-100">
                     <div class="font-medium">Adolescent & Young Adult Assessment</div>
                     <div class="text-xs text-gray-500">Ages 12-25 specialized evaluations</div>
                   </a>
-                  <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-100">
+                  <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 border-b border-gray-100">
                     <div class="font-medium">Forensic Assessment</div>
                     <div class="text-xs text-gray-500">Legal and court-related evaluations</div>
                   </a>
-                  <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-100">
+                  <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 border-b border-gray-100">
                     <div class="font-medium">Adult & Geriatric Assessment</div>
                     <div class="text-xs text-gray-500">Capacity and memory evaluations</div>
                   </a>
-                  <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-100">
+                  <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 border-b border-gray-100">
                     <div class="font-medium">Therapy Through the Lifespan</div>
                     <div class="text-xs text-gray-500">Counseling and therapeutic services</div>
                   </a>
-                  <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600">
                     <div class="font-medium">BNCE</div>
                     <div class="text-xs text-gray-500">Brief cognitive examination</div>
                   </a>
@@ -80,15 +107,15 @@
               </div>
             </div>
             
-            <a href="<?php echo home_url('/about-us/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About Us</a>
-            <a href="<?php echo home_url('/blog/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Blog</a>
-            <a href="<?php echo home_url('/resources/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Resources</a>
-            <a href="<?php echo home_url('/contact/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+            <a href="<?php echo home_url('/about-us/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">About Us</a>
+            <a href="<?php echo home_url('/blog/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Blog</a>
+            <a href="<?php echo home_url('/resources/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Resources</a>
+            <a href="<?php echo home_url('/contact/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Contact</a>
           </nav>
           
           <!-- CTA Phone Button -->
           <div class="flex items-center space-x-4">
-            <a href="<?php echo get_practice_phone_link(); ?>" class="hidden sm:flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+            <a href="<?php echo get_practice_phone_link(); ?>" class="hidden sm:flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
@@ -107,31 +134,31 @@
         <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-4">
           <div class="flex flex-col space-y-4">
-            <a href="<?php echo home_url(); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
+            <a href="<?php echo home_url(); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Home</a>
             
             <!-- Mobile Services Dropdown -->
             <div>
-              <button id="mobile-services-toggle" class="text-gray-700 hover:text-blue-600 transition-colors font-medium flex items-center justify-between w-full">
+              <button id="mobile-services-toggle" class="text-gray-700 hover:text-primary-600 transition-colors font-medium flex items-center justify-between w-full">
                 <span>Services</span>
                 <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
               <div id="mobile-services-menu" class="hidden mt-2 ml-4 space-y-2">
-                <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1">All Services</a>
-                <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1">Adolescent & Young Adult</a>
-                <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1">Forensic Assessment</a>
-                <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1">Adult & Geriatric</a>
-                <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1">Therapy Through Lifespan</a>
-                <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1">BNCE</a>
+                <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">All Services</a>
+                <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Adolescent & Young Adult</a>
+                <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Forensic Assessment</a>
+                <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Adult & Geriatric</a>
+                <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Therapy Through Lifespan</a>
+                <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">BNCE</a>
               </div>
             </div>
             
-            <a href="<?php echo home_url('/about-us/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About Us</a>
-            <a href="<?php echo home_url('/blog/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Blog</a>
-            <a href="<?php echo home_url('/resources/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Resources</a>
-            <a href="<?php echo home_url('/contact/'); ?>" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
-            <a href="<?php echo get_practice_phone_link(); ?>" class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors w-fit">
+            <a href="<?php echo home_url('/about-us/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">About Us</a>
+            <a href="<?php echo home_url('/blog/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Blog</a>
+            <a href="<?php echo home_url('/resources/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Resources</a>
+            <a href="<?php echo home_url('/contact/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Contact</a>
+            <a href="<?php echo get_practice_phone_link(); ?>" class="flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors w-fit">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
