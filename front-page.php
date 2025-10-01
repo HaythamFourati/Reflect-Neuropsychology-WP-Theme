@@ -15,7 +15,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                     </svg>
                 </div> -->
-                <h1 class="text-4xl md:text-6xl font-serif text-gray-900 mb-6">Unlocking minds.<br>Transforming Lives.</h1>
+                <h1 class="text-4xl md:text-6xl font-serif text-gray-900 mb-6">Unlocking <span class="text-primary-600">Minds</span><br>Transforming <span class="text-primary-600">Lives</span></h1>
                 <p class="text-xl md:text-2xl text-gray-700/90 mb-8 max-w-2xl mx-auto lg:mx-0">With individualized clinical and forensic neuropsychological assessment across the lifespan, our expert team of doctors provide comprehensive brain-based assessments for teens, adults, and seniors—empowering clarity and growth at every stage of life.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="<?php echo site_url('/contact/'); ?>" class="bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors">Book an Assessment</a>
