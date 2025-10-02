@@ -53,8 +53,8 @@
           <div class="flex items-center">
             <a href="<?php echo home_url(); ?>" class="flex items-center space-x-3">
               <!-- Brain/Psychology Icon -->
-              <div class="w-full h-13 rounded-lg flex items-center justify-center">
-                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/10/Healthcare-Website-in-Yellow-Black-Warm-Elegance-Style.png" alt="Dr. Judith L. Friedman" class="w-full h-full object-cover rounded-lg">
+              <div class="w-full h-14 rounded-lg flex items-center justify-center">
+                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/10/Healthcare-Website-in-Yellow-Black-Warm-Elegance-Style-Cropped.png" alt="Dr. Judith L. Friedman" class="w-full h-full object-cover rounded-lg">
               </div>
               <!-- <div>
                 <h1 class="text-xl font-serif text-gray-900">Reflect Neuropsychology</h1>
