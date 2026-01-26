@@ -54,7 +54,7 @@
             <a href="<?php echo home_url(); ?>" class="flex items-center space-x-3">
               <!-- Brain/Psychology Icon -->
               <div class="w-full h-12 md:h-14 lg:h-16 rounded-lg flex items-center justify-center">
-                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/10/Healthcare-Website-in-Yellow-Black-Warm-Elegance-Style.svg" alt="Dr. Judith L. Friedman" class="w-full h-full object-cover rounded-lg">
+                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/12/Reflect-Neuro-LOGO-PNG.png" alt="Reflect Neuropsychology" class="w-full h-full object-cover rounded-lg">
               </div>
               <!-- <div>
                 <h1 class="text-xl font-serif text-gray-900">Reflect Neuropsychology</h1>
@@ -131,7 +131,7 @@
           
           <!-- CTA Phone Button -->
           <div class="flex items-center space-x-4">
-            <a href="<?php echo get_practice_phone_link(); ?>" class="hidden md:flex items-center space-x-2 bg-primary-600 text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-colors text-sm lg:text-base lg:px-4">
+            <a href="<?php echo get_practice_phone_link(); ?>" class="hidden md:flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors font-medium text-sm lg:text-base">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
@@ -176,7 +176,7 @@
             <a href="<?php echo home_url('/blog/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Blog</a>
             <a href="<?php echo home_url('/resources/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Resources</a>
             <a href="<?php echo home_url('/contact/'); ?>" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Contact</a>
-            <a href="<?php echo get_practice_phone_link(); ?>" class="flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors w-fit">
+            <a href="<?php echo get_practice_phone_link(); ?>" class="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors font-medium">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>

@@ -14,7 +14,7 @@
         <div class="max-w-7xl ml-0 lg:ml-[-100px] text-center lg:text-left">
             <!-- Logo -->
             <div class="mb-24 lg:mb-24">
-                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/10/Healthcare-Website-in-Yellow-Black-Warm-Elegance-Style.svg" 
+                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/12/Reflect-Neuro-LOGO-PNG.png" 
                      alt="Reflect Neuropsychology" 
                      class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto mx-auto lg:mx-0">
             </div>
