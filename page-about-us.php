@@ -101,6 +101,19 @@ $team_members = [
             'With her specialized expertise in neurodegenerative diseases and the aging brain, she conducts capacity evaluations and cognitive rehabilitation. She integrates evidence-based cognitive, behavioral, and supportive interventions tailored to each client\'s unique neurological and psychosocial profile. Her goal is to foster cognitive resilience, independence, and quality of life. Dr. Goldsmith is dedicated to empowering patients and caregivers with clear understanding, compassionate guidance, and strategies to help navigate the challenges of aging and cognitive change at every stage of life.'
         ],
         'accent_color' => 'blue'
+    ],
+    [
+        'name' => 'Dr. Brianna Staley Shumaker',
+        'title' => 'ABPP Board-Certified Clinical Psychologist',
+        'image' => 'https://www.reflectneuro.com/wp-content/uploads/2026/02/prof-photo-black-and-white-.jpeg',
+        'bio' => [
+            'Dr. Brianna Staley Shumaker is a board-certified clinical psychologist specializing in comprehensive psychological and neuropsychological assessment across the lifespan. She evaluates children, adolescents, adults, and older adults to clarify diagnoses involving attention, executive functioning, learning, memory, emotional health, and complex cognitive concerns.
+Her evaluations integrate standardized testing with medical, developmental, and functional history to provide clear, practical recommendations tailored to each individual. She has extensive experience assessing ADHD, learning differences, traumatic brain injury, neurodevelopmental conditions, and neurodegenerative disorders.',
+            'Dr. Shumaker also conducts specialized evaluations in high-responsibility and occupational contexts, including fitness-for-duty, competency, aeromedical (FAA Tier 2), and forensic assessments. She completed advanced training at UCLA’s Alzheimer’s Disease Research Center, Children’s Hospital Los Angeles, Veterans Affairs, and Madigan Army Medical Center, where she served during her APA-accredited internship and postdoctoral residency.',
+            'A former U.S. Army Captain and Behavioral Health Officer, Dr. Shumaker provided psychological assessment and consultation for military leadership and special operations personnel.',
+            'She is board certified through the American Board of Professional Psychology (ABPP) and is licensed in Washington, California, Virginia, and Indiana. Her work is grounded in evidence-based practice and focused on providing clarity, direction, and confidence for individuals and families.',
+        ],
+        'accent_color' => 'blue'
     ]
 ];
 ?>
