@@ -47,36 +47,6 @@
                 </div>
             </div>
             
-            <!-- Service Card 2 - Pre-Surgical Cognitive Assessment -->
-            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <div class="flex flex-col md:flex-row-reverse h-full">
-                    <div class="md:w-2/5 relative overflow-hidden">
-                        <a href="<?php echo home_url('/pre-surgical-cognitive-assessment/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
-                            <img src="https://www.reflectneuro.com/wp-content/uploads/2025/12/antonio-zarza-F857zTqPz6c-unsplash.jpg" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
-                            <div class="absolute top-4 right-4">
-                                <div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center shadow-lg">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="md:w-3/5 p-6 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">Pre-Surgical Cognitive Assessment</h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">Comprehensive cognitive evaluations before surgical procedures to establish baseline functioning and help predict post-operative outcomes for optimal patient care.</p>
-                        </div>
-                        <a href="<?php echo home_url('/pre-surgical-cognitive-assessment/'); ?>" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-all duration-300 group-hover:translate-x-1">
-                            Learn More 
-                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
             <!-- Service Card 3 - Adolescent & Young Adult -->
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="flex flex-col md:flex-row h-full">
@@ -109,11 +79,11 @@
             
             <!-- Service Card 4 - Forensic Assessment -->
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <div class="flex flex-col md:flex-row-reverse h-full">
+                <div class="flex flex-col md:flex-row h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
                         <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2023/01/AdobeStock_317868311.jpg" alt="Forensic Assessment" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
-                            <div class="absolute top-4 right-4">
+                            <div class="absolute top-4 left-4">
                                 <div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center shadow-lg">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
@@ -169,11 +139,11 @@
             
             <!-- Service Card 6 - Therapy Through the Lifespan -->
             <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <div class="flex flex-col md:flex-row-reverse h-full">
+                <div class="flex flex-col md:flex-row h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
                         <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
                             <img src="https://www.reflectneuro.com/wp-content/uploads/2019/10/Forensic-Psychology-101-with-Reflect-Neuropsychology.jpg" alt="Therapy Through the Lifespan" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
-                            <div class="absolute top-4 right-4">
+                            <div class="absolute top-4 left-4">
                                 <div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center shadow-lg">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -198,7 +168,7 @@
             </div>
             
             <!-- Service Card 7 - BNCE -->
-            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 lg:col-span-2">
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="flex flex-col md:flex-row h-full">
                     <div class="md:w-2/5 relative overflow-hidden">
                         <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
