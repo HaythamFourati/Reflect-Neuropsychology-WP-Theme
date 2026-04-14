@@ -45,8 +45,8 @@
       
     </div>
     
-    <!-- Sticky Header - Hidden initially, slides down on scroll -->
-    <header id="main-header" class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 transform -translate-y-full transition-transform duration-300 ease-in-out">
+    <!-- Sticky Header -->
+    <header id="main-header" class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-3 md:py-4">
           <!-- Logo/Brand -->
@@ -211,51 +211,6 @@
           });
         }
         
-        // Header scroll functionality - only on home page
-        const isHomePage = document.body.classList.contains('home');
-        let lastScrollTop = 0;
-        let ticking = false;
-        
-        // Show header immediately on non-home pages
-        if (!isHomePage) {
-          header.classList.remove('-translate-y-full');
-          header.classList.add('translate-y-0');
-        }
-        
-        function updateHeader() {
-          // Only apply sliding effect on home page
-          if (!isHomePage) return;
-          
-          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          const heroSection = document.getElementById('hero');
-          
-          if (heroSection) {
-            const heroHeight = heroSection.offsetHeight;
-            
-            // Show header after completely passing the hero section
-            if (scrollTop > heroHeight) {
-              header.classList.remove('-translate-y-full');
-              header.classList.add('translate-y-0');
-            } else {
-              header.classList.remove('translate-y-0');
-              header.classList.add('-translate-y-full');
-            }
-          }
-          
-          lastScrollTop = scrollTop;
-          ticking = false;
-        }
-        
-        function requestTick() {
-          if (!ticking) {
-            requestAnimationFrame(updateHeader);
-            ticking = true;
-          }
-        }
-        
-        // Only add scroll listener on home page
-        if (isHomePage) {
-          window.addEventListener('scroll', requestTick);
-        }
+        // Header is now always visible - no scroll-based hiding
       });
     </script>
