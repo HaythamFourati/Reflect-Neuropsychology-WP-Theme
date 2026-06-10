@@ -196,6 +196,35 @@
                     </div>
                 </div>
             </div>
+            <!-- Service Card 8 - ADHD Testing -->
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+                <div class="flex flex-col md:flex-row h-full">
+                    <div class="md:w-2/5 relative overflow-hidden">
+                        <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block relative h-full group-hover:opacity-95 transition-opacity duration-300">
+                            <img src="https://images.unsplash.com/photo-1663229049463-53006f83a529?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ADHD Testing" class="w-full h-full min-h-[200px] object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-4 left-4">
+                                <div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="md:w-3/5 p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-serif text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">ADHD Testing</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Comprehensive virtual ADHD assessments for teens and adults (16+), led by Harvard and UCLA trained clinical neuropsychologists. Accurate diagnosis from the comfort of your home, available across California.</p>
+                        </div>
+                        <a href="<?php echo home_url('/adhd-testing/'); ?>" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-all duration-300 group-hover:translate-x-1">
+                            Learn More 
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

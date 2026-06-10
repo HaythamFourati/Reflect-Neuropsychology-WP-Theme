@@ -117,6 +117,10 @@
                         <div class="font-medium">BNCE</div>
                         <div class="text-xs text-gray-500">Brief cognitive examination</div>
                       </a>
+                      <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
+                        <div class="font-medium">ADHD Testing</div>
+                        <div class="text-xs text-gray-500">Virtual ADHD assessments for teens & adults</div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -169,6 +173,7 @@
                 <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Adult & Geriatric</a>
                 <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Therapy Through Lifespan</a>
                 <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">BNCE</a>
+                <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">ADHD Testing</a>
               </div>
             </div>
             
