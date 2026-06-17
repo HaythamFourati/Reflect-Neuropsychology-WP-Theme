@@ -86,6 +86,10 @@
                   <div class="grid grid-cols-2 gap-2">
                     <!-- Left Column -->
                     <div class="space-y-1">
+                      <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
+                        <div class="font-medium">ADHD Testing</div>
+                        <div class="text-xs text-gray-500">Virtual ADHD assessments for teens & adults</div>
+                      </a>
                       <a href="<?php echo home_url('/capacity-evaluation/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
                         <div class="font-medium">Capacity Evaluation</div>
                         <div class="text-xs text-gray-500">Decision-making capacity assessments</div>
@@ -98,13 +102,13 @@
                         <div class="font-medium">Adolescent & Young Adult</div>
                         <div class="text-xs text-gray-500">Ages 12-25 specialized evaluations</div>
                       </a>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="space-y-1">
                       <a href="<?php echo home_url('/forensic-neuropsychology/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
                         <div class="font-medium">Forensic Assessment</div>
                         <div class="text-xs text-gray-500">Legal and court-related evaluations</div>
                       </a>
-                    </div>
-                    <!-- Right Column -->
-                    <div class="space-y-1">
                       <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
                         <div class="font-medium">Adult & Geriatric Assessment</div>
                         <div class="text-xs text-gray-500">Capacity and memory evaluations</div>
@@ -116,10 +120,6 @@
                       <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
                         <div class="font-medium">BNCE</div>
                         <div class="text-xs text-gray-500">Brief cognitive examination</div>
-                      </a>
-                      <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block px-4 py-3 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg">
-                        <div class="font-medium">ADHD Testing</div>
-                        <div class="text-xs text-gray-500">Virtual ADHD assessments for teens & adults</div>
                       </a>
                     </div>
                   </div>
@@ -166,6 +166,7 @@
               </button>
               <div id="mobile-services-menu" class="hidden mt-2 ml-4 space-y-2">
                 <a href="<?php echo home_url('/neuropsychology-services/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">All Services</a>
+                <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">ADHD Testing</a>
                 <a href="<?php echo home_url('/capacity-evaluation/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Capacity Evaluation</a>
                 <a href="<?php echo home_url('/pre-surgical-cognitive-assessment/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Pre-Surgical Cognitive Assessment</a>
                 <a href="<?php echo home_url('/pediatric-adolescent-psychological-assessment/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Adolescent & Young Adult</a>
@@ -173,7 +174,6 @@
                 <a href="<?php echo home_url('/adult-neuropsychology/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Adult & Geriatric</a>
                 <a href="<?php echo home_url('/therapy-through-the-lifespan/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">Therapy Through Lifespan</a>
                 <a href="<?php echo home_url('/neuropsychological-cognitive-examination-bnce/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">BNCE</a>
-                <a href="<?php echo home_url('/adhd-testing/'); ?>" class="block text-sm text-gray-600 hover:text-primary-600 transition-colors py-1">ADHD Testing</a>
               </div>
             </div>
             
