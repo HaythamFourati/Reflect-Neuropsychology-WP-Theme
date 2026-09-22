@@ -142,6 +142,13 @@ get_header(); ?>
                                     <h4 class="font-semibold text-gray-900 mb-1">Location</h4>
                                     <p class="text-gray-600"><?php echo esc_html(get_practice_address()); ?></p>
                                     <a href="<?php echo esc_url('https://www.google.com/maps/search/?api=1&query=' . rawurlencode(get_practice_address())); ?>" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">View on Google Maps</a>
+                                    <?php if (!practice_has_moved()) : ?>
+                                    <div class="mt-3 border-t border-gray-100 pt-3">
+                                        <p class="text-xs font-semibold uppercase tracking-wide text-purple-600 mb-1">New address as of October 1st</p>
+                                        <p class="text-gray-600"><?php echo esc_html(get_practice_new_address()); ?></p>
+                                        <a href="<?php echo esc_url('https://www.google.com/maps/search/?api=1&query=' . rawurlencode(get_practice_new_address())); ?>" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">View new location on Google Maps</a>
+                                    </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
 

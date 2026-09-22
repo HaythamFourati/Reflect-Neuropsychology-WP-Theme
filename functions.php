@@ -35,7 +35,7 @@ function get_practice_phone_link() {
 
 // Office relocation: the practice moves on this date. Every address on the
 // site reads from the helpers below, so the switchover happens on its own.
-// After the move, delete the old address and the notice bar template part.
+// After the move, delete the old address, this helper, and the notice bar template part.
 function get_practice_move_date() {
   return '2026-10-01';
 }
@@ -54,6 +54,11 @@ function get_practice_address($part = 'full', $new = null) {
   if ($part === 'street')   return $street;
   if ($part === 'locality') return $locality;
   return $street . ', ' . $locality;
+}
+
+// New address for "also listing" alongside the current one before the move.
+function get_practice_new_address($part = 'full') {
+  return get_practice_address($part, true);
 }
 
 // Reading Time Function
