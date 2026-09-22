@@ -1,14 +1,19 @@
-CONTACT FORM 7 - REFLECT NEUROPSYCHOLOGY CONTACT FORM
-=====================================================
+CONTACT FORM 7 - REFLECT NEUROPSYCHOLOGY
+GENERAL INQUIRY / CALLBACK REQUEST FORM
+========================================
 
-FORM CODE (Copy this into Contact Form 7 plugin):
--------------------------------------------------
+This form is a GENERAL INQUIRY form only. It must never be positioned as an
+intake, scheduling, insurance, or referral channel, and it must never collect
+or transmit protected health information (PHI).
+
+FORM CODE (paste into the Contact Form 7 "Form" tab):
+-----------------------------------------------------
 
 <div class="form-row">
     <label> Your First Name *
         [text* first-name placeholder "Enter your first name"]
     </label>
-    
+
     <label> Your Last Name *
         [text* last-name placeholder "Enter your last name"]
     </label>
@@ -23,102 +28,100 @@ FORM CODE (Copy this into Contact Form 7 plugin):
 </label>
 
 <label> Subject
-    [select subject include_blank "Select a subject" "Schedule an Appointment" "Questions about Services" "Insurance Questions" "Referral Information" "Other"]
+    [select subject include_blank "General question" "Request a callback" "Services information" "Other"]
 </label>
 
-<label> Your Message *
-    [textarea* your-message 2x5 placeholder "Enter your message here..."]
+<label> Brief Message
+    [textarea your-message 2x5 placeholder "Please keep this general. Do not include personal health or insurance information."]
 </label>
 
 <label class="privacy-checkbox">
-    [acceptance privacy] I agree to the privacy policy and terms of service *
+    [acceptance privacy] I understand this form is for general inquiries only.
 </label>
 
-[submit "Send Message"]
+[submit "Request a Callback"]
 
-MAIL SETTINGS:
---------------
+NOTES ON THE FORM CODE:
+- The subject options are deliberately limited. Do NOT add "Schedule an
+  Appointment", "Insurance Questions", or "Referral Information".
+- The Privacy Notice shown above the form is rendered by the theme
+  (page-contact.php), NOT by CF7. Do not duplicate it here, and do not add
+  extra HIPAA warnings under the message box.
 
-To: Info@reflectneuro.com
-From: [your-email]
-Subject: New Contact Form Submission - [subject]
+MAIL SETTINGS (notification to the practice):
+---------------------------------------------
+
+To: [_site_admin_email]
+From: Reflect Neuropsychology <wordpress@[_site_domain]>
+Reply-To: [your-email]
+Subject: Callback request from the website - [subject]
 
 Message Body:
+A general inquiry was submitted on the website.
+
 Name: [first-name] [last-name]
 Email: [your-email]
 Phone: [phone]
-Subject: [subject]
+Reason: [subject]
 
-Message:
-[your-message]
+Reply by phone or email to continue the conversation.
 
----
-This email was sent from the contact form on Reflect Neuropsychology website.
+--
+Sent from the Reflect Neuropsychology website contact form.
+Only the fields above are transmitted.
 
-MAIL (2) - AUTO-REPLY SETTINGS:
--------------------------------
+IMPORTANT - DO NOT ADD [your-message] TO THIS EMAIL.
+The free-text message body is intentionally excluded from outbound
+notifications. Adding it back requires explicit approval.
 
-To: [your-email]
-From: Info@reflectneuro.com
-Subject: Thank you for contacting Reflect Neuropsychology
+Use "Reply-To", not "From: [your-email]" - a visitor-controlled From address
+fails SPF/DKIM and is a spoofing vector.
 
-Message Body:
-Dear [first-name],
+MAIL (2) - AUTO-REPLY:
+----------------------
 
-Thank you for contacting Reflect Neuropsychology. We have received your message and will respond within 24 hours during business hours (Monday-Friday, 9:00 AM - 5:00 PM).
-
-Your message:
-[your-message]
-
-If you need immediate assistance, please call us at (your-phone-number).
-
-Best regards,
-Dr. Judith L. Friedman
-Reflect Neuropsychology
+Leave Mail (2) DISABLED. An auto-reply echoes visitor-submitted content back
+over unencrypted email and has no value for a callback request.
 
 ADDITIONAL SETTINGS:
--------------------
+--------------------
 
-Add this to the Additional Settings tab in Contact Form 7:
+Leave the Additional Settings tab EMPTY.
 
-on_sent_ok: "gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});"
+Specifically, do NOT add analytics conversion tracking (for example
+on_sent_ok with an analytics conversion call). Contact form activity must not be sent to Google
+Analytics, Google Ads, a CRM, marketing lists, Make/Zapier, Google Sheets, or
+any other automation.
 
-INSTRUCTIONS FOR SETUP:
------------------------
+DATA HANDLING RULES:
+--------------------
 
-1. Install and activate Contact Form 7 plugin
-2. Go to Contact > Contact Forms in WordPress admin
-3. Create a new form or edit existing one
-4. Copy the FORM CODE above into the Form tab
-5. Configure the Mail settings using the MAIL SETTINGS above
-6. Set up auto-reply using MAIL (2) settings
-7. Save the form and note the shortcode (e.g., [contact-form-7 id="123" title="Contact form 1"])
-8. Replace the shortcode in page-contact.php with your actual form shortcode
-9. The CSS styling is already included in the template
+1. Do not install Flamingo or any other plugin that stores CF7 submissions in
+   the WordPress database.
+2. Do not forward submissions to third-party automations.
+3. Do not display any practice mailbox address publicly on
+   the site. Notifications go to the site admin address configured in
+   Settings > General.
+4. Any vendor that could receive PHI needs a Business Associate Agreement
+   before it is connected.
 
-SHORTCODE USAGE:
----------------
+SETUP:
+------
 
-Replace this line in page-contact.php:
-echo do_shortcode('[contact-form-7 id="contact-form" title="Contact Form"]');
-
-With your actual shortcode:
-echo do_shortcode('[contact-form-7 id="123" title="Contact form 1"]');
-
-STYLING NOTES:
---------------
-
-- The form uses custom CSS classes for styling
-- .form-row class creates a 2-column layout for name fields
-- All styling is responsive and matches the theme design
-- Focus states and hover effects are included
-- Success/error messages are styled to match the theme
+1. Install and activate Contact Form 7.
+2. Contact > Contact Forms, edit the form used on the Contact page.
+3. Paste the FORM CODE above into the Form tab.
+4. Configure Mail using the MAIL SETTINGS above; disable Mail (2).
+5. Confirm Additional Settings is empty.
+6. Save, and confirm the shortcode matches the one in page-contact.php.
+7. Confirm Flamingo is not active.
 
 TESTING:
 --------
 
-1. Test form submission
-2. Check email delivery
-3. Verify auto-reply functionality
-4. Test responsive design on mobile devices
-5. Validate required field functionality
+1. Submit the form and confirm delivery to the admin address.
+2. Confirm the notification email contains NO message body.
+3. Confirm no auto-reply is sent.
+4. Confirm no submission row is stored (Flamingo absent).
+5. Confirm the subject dropdown has only the four approved options.
+6. Check responsive layout and required-field validation.

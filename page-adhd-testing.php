@@ -86,7 +86,7 @@ add_action('wp_head', function () {
     "telephone": "+1-818-324-3800",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "5016 Parkway Calabasas Suite 212",
+      "streetAddress": "<?php echo esc_js(get_practice_address('street')); ?>",
       "addressLocality": "Calabasas",
       "addressRegion": "CA",
       "postalCode": "91302",

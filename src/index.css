@@ -228,3 +228,67 @@ html {
         grid-template-columns: 1fr;
     }
 }
+
+/* Staggered pulse for the notice-banner background dots (replaces inline style attrs so CSP can drop 'unsafe-inline'). */
+.animate-delay-1 { animation-delay: 1s; }
+.animate-delay-2 { animation-delay: 2s; }
+
+/* Single-post prose styles (moved out of wp_add_inline_style: no inline <style>, CSP-friendly). */
+
+      .prose {
+        color: var(--color-gray-700);
+        line-height: 1.75;
+      }
+      .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+        color: var(--color-gray-900);
+        font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .prose h1 { font-size: 2.25rem; }
+      .prose h2 { font-size: 1.875rem; }
+      .prose h3 { font-size: 1.5rem; }
+      .prose h4 { font-size: 1.25rem; }
+      .prose p { margin-bottom: 1.25rem; }
+      .prose a {
+        color: var(--color-primary);
+        text-decoration: underline;
+        font-weight: 500;
+      }
+      .prose a:hover {
+        color: var(--color-primary-light);
+      }
+      .prose blockquote {
+        border-left: 4px solid var(--color-primary);
+        padding-left: 1rem;
+        font-style: italic;
+        color: var(--color-gray-500);
+        margin: 1.5rem 0;
+      }
+      .prose ul, .prose ol {
+        margin: 1.25rem 0;
+        padding-left: 1.5rem;
+      }
+      .prose li {
+        margin: 0.5rem 0;
+      }
+      .prose img {
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        margin: 2rem 0;
+      }
+      .prose code {
+        background-color: var(--color-gray-100);
+        padding: 0.125rem 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+      }
+      .prose pre {
+        background-color: var(--color-gray-800);
+        color: var(--color-gray-50);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+      }

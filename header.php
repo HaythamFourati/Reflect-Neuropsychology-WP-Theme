@@ -6,47 +6,11 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <!-- ADHD Telehealth Notice Banner -->
-    <div class="relative bg-gradient-to-r from-orange-50 via-primary-50 to-orange-50 overflow-hidden">
-      <!-- Animated background elements -->
-      <div class="absolute inset-0 opacity-20">
-        <div class="absolute top-0 left-0 w-32 h-32 bg-orange-200 rounded-full animate-pulse" style="animation-delay: 0s;"></div>
-        <div class="absolute top-0 right-0 w-24 h-24 bg-primary-200 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
-        <div class="absolute bottom-0 left-1/4 w-20 h-20 bg-orange-300 rounded-full animate-pulse" style="animation-delay: 2s;"></div>
-      </div>
-      
-      <div class="relative max-w-6xl mx-auto">
-        <div class="text-center">
-          <a href="https://adhdtestcalifornia.com/" target="_blank" rel="noopener noreferrer" class="group w-full flex items-center gap-10 justify-center backdrop-blur-sm px-6 py-3 transform hover:scale-105 transition-all duration-300 ">
-            <!-- Content with animated notification -->
-            <div class="flex items-center space-x-3">
-              <div class="relative">
-                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold bg-black-100 text-primary-800 animate-pulse">
-                  NEW
-                </span>
-                <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
-              </div>
-              <span class="font-bold text-black-700 text-sm sm:text-base">ADHD Telehealth Testing</span>
-              <span class="text-xs sm:text-sm text-black-600 hidden sm:inline">
-                Now available across California • In-Home Service
-              </span>
-            </div>
-            
-            <!-- Animated arrow -->
-            <div class="flex items-center space-x-1 text-primary-600 group-hover:text-primary-700">
-              <span class="text-sm font-semibold hidden sm:inline">Learn More</span>
-              <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </div>
-      
-    </div>
-    
+    <!-- Site-wide rotating notice bar -->
+    <?php get_template_part('template-parts/site-notices'); ?>
+
     <!-- Sticky Header -->
-    <header id="main-header" class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+    <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-3 md:py-4">
           <!-- Logo/Brand -->
@@ -192,30 +156,3 @@
       </div>
     </header>
 
-    <!-- Mobile Menu & Header Scroll JavaScript -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileServicesToggle = document.getElementById('mobile-services-toggle');
-        const mobileServicesMenu = document.getElementById('mobile-services-menu');
-        const header = document.getElementById('main-header');
-        
-        // Mobile menu functionality
-        if (mobileMenuButton && mobileMenu) {
-          mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-          });
-        }
-        
-        if (mobileServicesToggle && mobileServicesMenu) {
-          mobileServicesToggle.addEventListener('click', function() {
-            mobileServicesMenu.classList.toggle('hidden');
-            const arrow = mobileServicesToggle.querySelector('svg');
-            arrow.classList.toggle('rotate-180');
-          });
-        }
-        
-        // Header is now always visible - no scroll-based hiding
-      });
-    </script>

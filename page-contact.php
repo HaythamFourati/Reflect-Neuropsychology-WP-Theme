@@ -78,6 +78,15 @@ get_header(); ?>
                         </p>
                     </div>
 
+                    <!-- Privacy Notice (compact, single instance) -->
+                    <div class="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm text-gray-700" role="note">
+                        <strong class="font-semibold text-gray-900">Privacy Notice:</strong>
+                        This form is for general questions and callback requests only. Please do not include symptoms,
+                        diagnoses, medical history, insurance details, referral documents, test results, or
+                        urgent/emergency concerns. If this is a medical or mental health emergency, call
+                        <a href="tel:911" class="font-semibold text-blue-700 underline">911</a> or go to the nearest emergency room.
+                    </div>
+
                     <!-- Contact Form 7 Placeholder -->
                     <div class="cf7-form-container">
                         <?php 
@@ -123,18 +132,6 @@ get_header(); ?>
                             </div>
 
                             <div class="flex items-start">
-                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
-                                    <p class="text-gray-600">Info@reflectneuro.com</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
                                 <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                     <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -143,7 +140,8 @@ get_header(); ?>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900 mb-1">Location</h4>
-                                    <a href="https://www.google.com/maps/place/5016+Parkway+Calabasas+UNIT+212,+Calabasas,+CA+91302"><p class="text-gray-600">5016 Parkway Calabasas UNIT 212, Calabasas, CA 91302</p> </a>
+                                    <p class="text-gray-600"><?php echo esc_html(get_practice_address()); ?></p>
+                                    <a href="<?php echo esc_url('https://www.google.com/maps/search/?api=1&query=' . rawurlencode(get_practice_address())); ?>" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">View on Google Maps</a>
                                 </div>
                             </div>
 

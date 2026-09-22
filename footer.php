@@ -46,13 +46,7 @@
                         <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
-                        <span class="text-gray-400">5016 Parkway Calabasas Suite 212, Calabasas, CA 91302</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
-                        <span class="text-gray-400">Info@reflectneuro.com</span>
+                        <span class="text-gray-400"><?php echo esc_html(get_practice_address()); ?></span>
                     </div>
                     <div class="flex items-center space-x-3">
                         <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,8 +80,8 @@
             </div>
             
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors uppercase tracking-wide">Privacy</a>
-                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors uppercase tracking-wide">Cookies</a>
+                <a href="<?php echo home_url('/privacy-policy/'); ?>" class="text-gray-400 hover:text-white text-sm transition-colors uppercase tracking-wide">Privacy</a>
+                <a href="<?php echo home_url('/privacy-policy/'); ?>" class="text-gray-400 hover:text-white text-sm transition-colors uppercase tracking-wide">Cookies</a>
             </div>
         </div>
     </div>
