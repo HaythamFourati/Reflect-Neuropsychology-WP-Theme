@@ -9,7 +9,7 @@
 // SEO: Output meta description and structured data in wp_head
 add_action('wp_head', function () {
 ?>
-<meta name="description" content="Comprehensive ADHD testing in California — virtual telehealth assessments for teens & adults (16+). Led by Harvard & UCLA trained neuropsychologists Dr. Judith Friedman and Dr. Goldsmith at Reflect Neuropsychology.">
+<meta name="description" content="Comprehensive ADHD testing in California — virtual telehealth assessments for teens & adults (16+). Led by Harvard & UCLA trained neuropsychologist Dr. Judith Friedman at Reflect Neuropsychology.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="<?php echo esc_url(get_permalink()); ?>">
 
@@ -136,7 +136,7 @@ get_header(); ?>
                 
                 <!-- Page Description -->
                 <div class="text-xl text-gray-600 leading-relaxed mb-8">
-                    <p><?php esc_html_e('Comprehensive virtual ADHD assessments for teens and adults (16+), led by Dr. Judith Friedman and Dr. Goldsmith — clinical neuropsychologists with Harvard and UCLA training. Get an accurate diagnosis from the comfort of your home.', 'reflect-neuro'); ?></p>
+                    <p><?php esc_html_e('Comprehensive virtual ADHD assessments for teens and adults (16+), led by Dr. Judith Friedman — a clinical neuropsychologist with Harvard and UCLA training. Get an accurate diagnosis from the comfort of your home.', 'reflect-neuro'); ?></p>
                 </div>
                 
                 <!-- Key Features -->
@@ -511,7 +511,7 @@ get_template_part('template-parts/services-template-parts/assessment-process-sec
                     </div>
                     <h2 class="text-2xl md:text-3xl font-serif text-gray-900 mb-4">Virtual ADHD Testing — Anywhere in California</h2>
                     <p class="text-gray-600 leading-relaxed mb-4">Through our dedicated ADHD telehealth program, we bring expert neuropsychological ADHD assessments directly to your home. No matter where you live in California — Los Angeles, San Francisco, San Diego, Sacramento, or any community in between — you can access the same gold-standard testing used in our Calabasas office.</p>
-                    <p class="text-gray-600 leading-relaxed mb-6">Our virtual ADHD assessments are quick, convenient, and affordable. All you need is a computer with a camera and a stable internet connection. Every evaluation is led by Dr. Judith Friedman or Dr. Goldsmith, clinical neuropsychologists with Harvard and UCLA training.</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Our virtual ADHD assessments are quick, convenient, and affordable. All you need is a computer with a camera and a stable internet connection. Every evaluation is led by Dr. Judith Friedman, a clinical neuropsychologist with Harvard and UCLA training.</p>
                     <a href="https://adhdtestcalifornia.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors duration-300 shadow-lg hover:shadow-xl">
                         Visit ADHDTestCalifornia.com
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -93,16 +93,6 @@ $team_members = [
         'accent_color' => 'blue'
     ],
     [
-        'name' => 'Dr. Genifer Goldsmith',
-        'title' => 'Brain Health Specialist',
-        'image' => 'https://www.reflectneuro.com/wp-content/uploads/2025/12/Dr-Genifer-Goldsmith-Picsart-AiImageEnhancer.jpg',
-        'bio' => [
-            'Dr. Genifer Goldsmith specializes in brain health across the lifespan, offering both in-person and telehealth appointments for comfort and convenience. With advanced fellowship training at UCLA and residency experience at the VA Hospital, she is an expert in evaluating and supporting older adults facing memory changes, dementia, and complex medical conditions. Dr. Goldsmith conducts thorough neuropsychological assessments, including telehealth ADHD evaluations for children, teens, and adults.',
-            'With her specialized expertise in neurodegenerative diseases and the aging brain, she conducts capacity evaluations and cognitive rehabilitation. She integrates evidence-based cognitive, behavioral, and supportive interventions tailored to each client\'s unique neurological and psychosocial profile. Her goal is to foster cognitive resilience, independence, and quality of life. Dr. Goldsmith is dedicated to empowering patients and caregivers with clear understanding, compassionate guidance, and strategies to help navigate the challenges of aging and cognitive change at every stage of life.'
-        ],
-        'accent_color' => 'blue'
-    ],
-    [
         'name' => 'Dr. Brianna Staley Shumaker',
         'title' => 'ABPP Board-Certified Clinical Psychologist',
         'image' => 'https://www.reflectneuro.com/wp-content/uploads/2026/02/prof-photo-black-and-white-.jpeg',

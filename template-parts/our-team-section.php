@@ -84,38 +84,6 @@
                 </div>
             </div>
             
-            <!-- Team Member 3 - Dr. Goldsmith -->
-            <div class="group">
-                <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
-                    <div class="flex flex-col md:flex-row">
-                        <div class="md:w-2/5 relative overflow-hidden">
-                            <div class="aspect-square md:aspect-auto md:h-full">
-                                <img src="https://www.reflectneuro.com/wp-content/uploads/2025/12/Dr-Genifer-Goldsmith-Picsart-AiImageEnhancer.jpg" 
-                                     alt="Dr. Genifer Goldsmith" 
-                                     class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700">
-                            </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent md:bg-gradient-to-r"></div>
-                        </div>
-                        <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
-                            <div class="flex items-center gap-2 mb-4">
-                                <span class="w-12 h-1 bg-primary-500 rounded-full"></span>
-                                <span class="w-3 h-1 bg-primary-300 rounded-full"></span>
-                            </div>
-                            <h3 class="text-2xl md:text-3xl font-serif text-gray-900 mb-2">Dr. Genifer Goldsmith</h3>
-                            <p class="text-primary-600 font-semibold text-lg mb-6">Brain Health Specialist</p>
-                            <p class="text-gray-600 leading-relaxed mb-8">Dr. Genifer Goldsmith specializes in brain health across the lifespan, offering both in-person and telehealth appointments. With advanced fellowship training at UCLA and residency experience at the VA Hospital, she is an expert in evaluating and supporting older adults facing memory changes, dementia, and complex medical conditions.</p>
-                            <div>
-                                <a href="<?php echo site_url('/about-us#our-team'); ?>" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl group/btn">
-                                    Read Full Bio
-                                    <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
